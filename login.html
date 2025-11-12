@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CoFound — Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🧭 Navbar -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo">CoFound</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="idea.html">Pitch Idea</a>
+        <a href="invest.html">Invest</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a class="btn" href="index.html">Back</a>
+    </div>
+  </header>
+
+  <!-- 💼 Main Section -->
+  <main class="container narrow">
+    <h1 class="page-title">Login</h1>
+    <p class="muted">Welcome back! Sign in to continue your Cofound journey.</p>
+
+    <div class="form-card">
+      <!-- Role Switch Tabs -->
+      <div class="role-tabs">
+        <input type="radio" name="role" id="investor" checked>
+        <label for="investor">Investor</label>
+        <input type="radio" name="role" id="innovator">
+        <label for="innovator">Innovator</label>
+      </div>
+
+      <!-- Investor Login -->
+      <form class="login-form investor-form">
+        <div class="input-group">
+          <input type="email" id="investor-email" placeholder=" " required>
+          <label for="investor-email">Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="investor-password" placeholder=" " required>
+          <label for="investor-password">Password</label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Login</button>
+          <a class="btn ghost" href="signup.html">Create Account</a>
+        </div>
+      </form>
+
+      <!-- Innovator Login -->
+      <form class="login-form innovator-form">
+        <div class="input-group">
+          <input type="email" id="innovator-email" placeholder=" " required>
+          <label for="innovator-email">Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="innovator-password" placeholder=" " required>
+          <label for="innovator-password">Password</label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Login</button>
+          <a class="btn ghost" href="signup.html">Create Account</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer small">
+    <a href="index.html" class="muted">← Back to home</a>
+  </footer>
+</body>
+</html>
